@@ -16,46 +16,47 @@ Customizable Compression Level: Uses Ghostscript's /ebook setting by default, bu
 
 **Prerequisites**
 
-Python 3.x installed on your system.
-Ghostscript installed on your system.
-Download and install Ghostscript from here.
+-Python 3.x installed on your system.
+-Ghostscript installed on your system.
 
 **Installation**
+
 Clone the Repository:
 
-sh
-Copy code
 git clone url
-cd pdf-compressor
-Set Up Ghostscript:
 
 Ensure that the Ghostscript executable (gswin64c.exe) is correctly installed and accessible from the specified path in the script.
-Directory Structure:
+
+**Directory Structure:**
 
 Place the PDF files you want to compress in the pdfsfiles directory.
+
 The compressed PDFs will be saved in the compressed directory.
+
 Usage
+
 Run the PDF Compression Script:
 
-sh
-Copy code
 python pdf_compressor.py
-Process Overview:
+
+**Process Overview:**
 
 The script will traverse the pdfsfiles directory, identify all PDF files, compress them using Ghostscript, and save the compressed files to the compressed directory.
 Customization:
 
 Modify the -dPDFSETTINGS parameter in the Ghostscript command for different compression levels:
-/screen — low-resolution output similar to screen-view.
-/ebook — medium-resolution output similar to eBook.
-/printer — high-resolution output similar to printing.
-/prepress — output similar to prepress quality.
-File Structure
-graphql
-Copy code
-pdf-compressor/
 
-│
+/screen — low-resolution output similar to screen-view.
+
+/ebook — medium-resolution output similar to eBook.
+
+/printer — high-resolution output similar to printing.
+
+/prepress — output similar to prepress quality.
+
+**File Structure**
+
+pdf-compressor/
 
 ├── pdf_compressor.py        # Main script for compressing PDF files
 
