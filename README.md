@@ -17,13 +17,14 @@ Customizable Compression Level: Uses Ghostscript's /ebook setting by default, bu
 **Prerequisites**
 
 -Python 3.x installed on your system.
+
 -Ghostscript installed on your system.
 
 **Installation**
 
 Clone the Repository:
 
-git clone url
+-git clone url
 
 Ensure that the Ghostscript executable (gswin64c.exe) is correctly installed and accessible from the specified path in the script.
 
@@ -35,14 +36,15 @@ The compressed PDFs will be saved in the compressed directory.
 
 Usage
 
-Run the PDF Compression Script:
+-Run the PDF Compression Script:
 
-python pdf_compressor.py
+-python pdf_compressor.py
 
 **Process Overview:**
 
 The script will traverse the pdfsfiles directory, identify all PDF files, compress them using Ghostscript, and save the compressed files to the compressed directory.
-Customization:
+
+**Customization:**
 
 Modify the -dPDFSETTINGS parameter in the Ghostscript command for different compression levels:
 
